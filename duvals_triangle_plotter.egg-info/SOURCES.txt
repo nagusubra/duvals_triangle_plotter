@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+duvals_triangle_plotter/__init__.py
+duvals_triangle_plotter/__main__.py
+duvals_triangle_plotter/constants.py
+duvals_triangle_plotter/duvals_triangle_plotter.py
+duvals_triangle_plotter.egg-info/PKG-INFO
+duvals_triangle_plotter.egg-info/SOURCES.txt
+duvals_triangle_plotter.egg-info/dependency_links.txt
+duvals_triangle_plotter.egg-info/entry_points.txt
+duvals_triangle_plotter.egg-info/requires.txt
+duvals_triangle_plotter.egg-info/top_level.txt

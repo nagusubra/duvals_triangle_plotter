@@ -1,0 +1,2 @@
+[console_scripts]
+duvals_triangle_plotter = duvals_triangle_plotter.__main__:main

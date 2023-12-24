@@ -2,11 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='duvals_triangle_plotter',
-    version='1.0.0',
+    version='1.0',
     packages=find_packages(),
     install_requires=[
         'plotly',
-        'ploly-express',
         # Add any other dependencies here
     ],
     entry_points={
