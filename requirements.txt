@@ -2,6 +2,7 @@ certifi==2023.11.17
 charset-normalizer==3.3.2
 colorama==0.4.6
 docutils==0.20.1
+duvals-triangle-plotter==1.0
 idna==3.6
 importlib-metadata==7.0.1
 iniconfig==2.0.0
