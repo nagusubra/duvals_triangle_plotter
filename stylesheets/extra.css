@@ -1,0 +1,52 @@
+/* Duval's Triangle Plotter — custom overrides for MkDocs Material */
+
+/* Slightly larger body text for readability */
+.md-typeset {
+    font-size: 0.8rem;
+}
+
+/* Style the homepage grid cards */
+.grid.cards {
+    margin: 1em 0;
+}
+
+/* Improve figure/figcaption styling */
+.md-typeset figure img {
+    border: 1px solid #d0d0d0;
+    border-radius: 0;
+}
+
+.md-typeset figcaption {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* Code block improvements */
+.md-typeset pre > code {
+    border-radius: 0;
+}
+
+/* Table improvements */
+.md-typeset table:not([class]) {
+    font-size: 0.78rem;
+    border-radius: 0;
+}
+
+.md-typeset table:not([class]) th {
+    background: #f5f7fa;
+}
+
+/* Fix badge images in homepage */
+.md-typeset img[alt="PyPI version"],
+.md-typeset img[alt="MIT license"],
+.md-typeset img[alt="Python versions"],
+.md-typeset img[alt="GitHub stars"] {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* Content max-width slightly wider for code examples */
+.md-grid {
+    max-width: 64rem;
+}
