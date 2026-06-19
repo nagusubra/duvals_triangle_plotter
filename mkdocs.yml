@@ -29,10 +29,6 @@ plugins:
   - search
   - minify:
       minify_html: true
-  - sitemap:
-      lastmod: true
-      priority: auto
-      changefreq: auto
 
 markdown_extensions:
   - admonition
@@ -69,5 +65,3 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-
-google_analytics: []

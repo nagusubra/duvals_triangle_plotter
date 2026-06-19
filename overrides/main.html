@@ -32,12 +32,23 @@
   </script>
   {% endif %}
 
-  <meta property="og:title" content="{% block og_title %}{{ page.title | default(site_name) }}{% endblock %}">
-  <meta property="og:description" content="{% block og_description %}{{ page.meta.description | default(site_description) }}{% endblock %}">
-  <meta property="og:url" content="{{ page.canonical_url | default(site_url) }}">
-  <meta property="og:type" content="{% if page and page.file and page.file.src_uri in ['fault-regions.md', 'duvals-triangle-explained.md'] %}article{% else %}website{% endif %}">
-  <meta property="og:image" content="{{ site_url }}sample_output.png">
+  {% if page and page.meta %}
+  <meta property="og:title" content="{{ page.meta.get('title', page.title) | default(config.site_name, true) }}">
+  <meta property="og:description" content="{{ page.meta.get('description', config.site_description) }}">
+  <meta property="og:type" content="{% if page.file and page.file.src_uri in ['fault-regions.md', 'duvals-triangle-explained.md'] %}article{% else %}website{% endif %}">
+  <meta property="og:image" content="{{ config.site_url }}sample_output.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% block twitter_title %}{{ page.title | default(site_name) }}{% endblock %}">
-  <meta name="twitter:description" content="{% block twitter_description %}{{ page.meta.description | default(site_description) }}{% endblock %}">
+  <meta name="twitter:title" content="{{ page.meta.get('title', page.title) | default(config.site_name, true) }}">
+  <meta name="twitter:description" content="{{ page.meta.get('description', config.site_description) }}">
+  {% else %}
+  <meta property="og:title" content="{{ config.site_name }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ config.site_url }}sample_output.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ config.site_name }}">
+  <meta name="twitter:description" content="{{ config.site_description }}">
+  {% endif %}
+
+  <meta property="og:url" content="{{ page.canonical_url | default(config.site_url) }}">
 {% endblock %}
