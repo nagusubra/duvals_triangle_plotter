@@ -14,14 +14,14 @@ setup(
     },
     include_package_data=True,
     author='Subramanian Narayanan',
-    author_email='snarayan@nagusubra.com',
+
     description="Duval's Triangle Plotter — Python library for generating Duval's Triangle plots for DGA",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://nagusubra.github.io/duvals-triangle-plotter/',
+    url='https://nagusubra.github.io/duvals_triangle_plotter/',
     project_urls={
-        'Source Code': 'https://github.com/nagusubra/duvals-triangle-plotter',
-        'Bug Tracker': 'https://github.com/nagusubra/duvals-triangle-plotter/issues',
+        'Source Code': 'https://github.com/nagusubra/duvals_triangle_plotter',
+        'Bug Tracker': 'https://github.com/nagusubra/duvals_triangle_plotter/issues',
     },
     license='MIT',
     classifiers=[
