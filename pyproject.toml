@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.6"
 license = "MIT"
 authors = [
-    {name = "Subramanian Narayanan", email = "snarayan@nagusubra.com"},
+    {name = "Subramanian Narayanan"},
 ]
 keywords = [
     "duval",
@@ -46,11 +46,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://nagusubra.github.io/duvals-triangle-plotter/"
-Documentation = "https://nagusubra.github.io/duvals-triangle-plotter/"
-Repository = "https://github.com/nagusubra/duvals-triangle-plotter"
-"Bug Tracker" = "https://github.com/nagusubra/duvals-triangle-plotter/issues"
-"Changelog" = "https://github.com/nagusubra/duvals-triangle-plotter/blob/main/CHANGELOG.txt"
+Homepage = "https://nagusubra.github.io/duvals_triangle_plotter/"
+Documentation = "https://nagusubra.github.io/duvals_triangle_plotter/"
+Repository = "https://github.com/nagusubra/duvals_triangle_plotter"
+"Bug Tracker" = "https://github.com/nagusubra/duvals_triangle_plotter/issues"
+"Changelog" = "https://github.com/nagusubra/duvals_triangle_plotter/blob/main/CHANGELOG.txt"
 
 [project.scripts]
 duvals-triangle-plotter = "duvals_triangle_plotter.__main__:main"
