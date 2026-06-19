@@ -18,7 +18,7 @@ setup(
     description="Duval's Triangle Plotter — Python library for generating Duval's Triangle plots for DGA",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://nagusubra.github.io/duvals-triangle-plotter',
+    url='https://nagusubra.github.io/duvals-triangle-plotter/',
     project_urls={
         'Source Code': 'https://github.com/nagusubra/duvals-triangle-plotter',
         'Bug Tracker': 'https://github.com/nagusubra/duvals-triangle-plotter/issues',

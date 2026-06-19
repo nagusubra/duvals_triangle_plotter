@@ -1,6 +1,6 @@
 # Duval's Triangle Plotter
 
-Python library for generating [Duval's Triangle](https://nagusubra.github.io/duvals-triangle-plotter) plots — a ternary diagnostic tool used in Dissolved Gas Analysis (DGA) for power transformer condition monitoring.
+Python library for generating [Duval's Triangle](https://nagusubra.github.io/duvals-triangle-plotter/) plots — a ternary diagnostic tool used in Dissolved Gas Analysis (DGA) for power transformer condition monitoring.
 
 ## Installation
 
@@ -21,7 +21,7 @@ fig = dtp.get_duvals_triangle_plot([trace], show_plot=True)
 
 ## Documentation
 
-Full documentation and API reference: [nagusubra.github.io/duvals-triangle-plotter](https://nagusubra.github.io/duvals-triangle-plotter)
+Full documentation and API reference: [nagusubra.github.io/duvals-triangle-plotter](https://nagusubra.github.io/duvals-triangle-plotter/)
 
 ## License
 

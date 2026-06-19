@@ -56,16 +56,18 @@ body {
 .meta-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    font-size: 0.8125rem;
-    color: #555;
+    gap: 6px;
+    align-items: center;
 }
 
-.meta-badges span {
+.meta-badges a {
     display: inline-block;
-    padding: 2px 8px;
-    border: 1px solid #d0d0d0;
-    background: #fafafa;
+    line-height: 0;
+}
+
+.meta-badges img {
+    height: 20px;
+    display: block;
 }
 
 /* --- Typography -------------------------------------------------------- */
