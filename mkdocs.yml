@@ -1,0 +1,73 @@
+site_name: Duval's Triangle Plotter
+site_description: >-
+  Python library for generating Duval's Triangle plots for Dissolved Gas
+  Analysis (DGA) in power transformer diagnostics.
+site_url: https://nagusubra.github.io/duvals_triangle_plotter/
+repo_url: https://github.com/nagusubra/duvals_triangle_plotter
+repo_name: nagusubra/duvals_triangle_plotter
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    primary: indigo
+    accent: indigo
+  logo: sample_output.png
+  favicon: sample_output.png
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - sitemap:
+      lastmod: true
+      priority: auto
+      changefreq: auto
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - API Reference: api-reference.md
+  - Fault Regions: fault-regions.md
+  - Duval's Triangle Explained: duvals-triangle-explained.md
+  - Examples: examples.md
+  - FAQ: faq.md
+  - Changelog: changelog.md
+  - About: about.md
+  - License: license.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nagusubra/duvals_triangle_plotter
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/duvals-triangle-plotter/
+
+extra_css:
+  - stylesheets/extra.css
+
+google_analytics: []

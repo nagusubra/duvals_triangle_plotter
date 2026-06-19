@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% if page and page.file and page.file.src_uri == "index.md" %}
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Duval's Triangle Plotter",
+      "description": "Python library for generating Duval's Triangle plots for Dissolved Gas Analysis (DGA) in power transformer diagnostics.",
+      "applicationCategory": "ScientificApplication",
+      "operatingSystem": "OS Independent",
+      "programmingLanguage": "Python 3",
+      "codeRepository": "https://github.com/nagusubra/duvals_triangle_plotter",
+      "downloadUrl": "https://pypi.org/project/duvals-triangle-plotter/",
+      "author": { "@type": "Person", "name": "Subramanian Narayanan" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "sameAs": [
+          "https://github.com/nagusubra/duvals_triangle_plotter",
+          "https://pypi.org/project/duvals-triangle-plotter/"
+      ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Duval's Triangle Plotter",
+      "url": "https://nagusubra.github.io/duvals_triangle_plotter/",
+      "description": "Python library for generating Duval's Triangle plots for Dissolved Gas Analysis (DGA) in power transformer diagnostics."
+  }
+  </script>
+  {% endif %}
+
+  <meta property="og:title" content="{% block og_title %}{{ page.title | default(site_name) }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ page.meta.description | default(site_description) }}{% endblock %}">
+  <meta property="og:url" content="{{ page.canonical_url | default(site_url) }}">
+  <meta property="og:type" content="{% if page and page.file and page.file.src_uri in ['fault-regions.md', 'duvals-triangle-explained.md'] %}article{% else %}website{% endif %}">
+  <meta property="og:image" content="{{ site_url }}sample_output.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% block twitter_title %}{{ page.title | default(site_name) }}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{{ page.meta.description | default(site_description) }}{% endblock %}">
+{% endblock %}
