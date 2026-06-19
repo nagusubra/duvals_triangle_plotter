@@ -1,3 +1,0 @@
-dist
-docs
-duvals_triangle_plotter
