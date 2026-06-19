@@ -1,6 +1,7 @@
 LICENSE.txt
 MANIFEST.in
 README.md
+pyproject.toml
 setup.py
 duvals_triangle_plotter/__init__.py
 duvals_triangle_plotter/__main__.py
